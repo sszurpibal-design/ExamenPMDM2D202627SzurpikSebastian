@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
     
     private void CheckJump()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && checkGround.isGrounded();)
+        if (Input.GetKeyDown(KeyCode.Space) && checkGround)
         {
             _rigidBody.velocity = new Vector2(_rigidBody.velocity.x, jumpForce);
         }
